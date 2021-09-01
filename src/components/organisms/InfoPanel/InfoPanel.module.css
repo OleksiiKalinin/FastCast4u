@@ -1,0 +1,142 @@
+.InfoPanel {
+    padding: 48px 0 80px 0;
+    background-color: #fff;
+    color: #555;
+    position: relative;
+}
+
+.InfoPanelInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.InfoPanelInner>h2 {
+    margin-bottom: 24px;
+    font-size: 30px;
+    color: #444;
+    text-align: center;
+}
+
+.InfoPanelTable {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.InfoPanelTableTopics {
+    width: 30%;
+    align-self: flex-start;
+    margin-top: 40px;
+}
+
+.InfoPanelTableTopics>div {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.InfoPanelTableTopic {
+    position: relative;
+    display: block;
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.InfoPanelTableTopic::after {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 2px;
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-top: -1px;
+    transform: translate(25%, 1.5px);
+    background: linear-gradient(to right, transparent 10%, #4772d9 50%);
+    transition: all 0.4s ease-in-out;
+    background-color: #4772d9;
+}
+
+.ActiveTopic {
+    color: #4772d9 !important;
+}
+
+.ActiveTopic::after {
+    opacity: 1;
+    transform: translate(0, 1.5px);
+}
+
+.InfoPanelTableInfo {
+    width: 70%;
+    padding-right: 30px;
+}
+
+.ScrollButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ScrollButton>svg {
+    font-size: 32px;
+    color: #222;
+    cursor: pointer;
+    animation: fadeInDown 1.2s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .InfoPanelTable {
+        flex-direction: column;
+    }
+
+    .InfoPanelTableTopics {
+        align-self: auto;
+        margin-top: 0;
+    }
+
+    .InfoPanelTableTopics>div {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #eee;
+        margin-bottom: 50px;
+    }
+
+    .InfoPanelTableTopics,
+    .InfoPanelTableInfo {
+        width: 100%;
+    }
+
+    .ActiveTopic::after {
+        opacity: 0;
+    }
+}

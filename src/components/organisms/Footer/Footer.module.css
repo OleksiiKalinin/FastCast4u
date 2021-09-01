@@ -1,0 +1,31 @@
+.Footer {
+    position: relative;
+    background-color: #333;
+    color: #CCC;
+}
+
+.Copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    color: rgba(255,255,255,0.25);
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+}
+
+.Copyrights > span {
+    text-align: center;
+}
+
+.Copyrights > span > a {
+    margin: 0 3px;
+    color: rgba(255,255,255,0.25);
+    border-bottom: 1px dotted #444;
+}
+
+.Copyrights > span > a:hover {
+    color: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}

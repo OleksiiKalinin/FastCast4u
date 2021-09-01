@@ -1,0 +1,124 @@
+.HomePage {
+    display: flex;
+    flex-direction: column;
+    transition: all .6s ease; 
+}
+
+.SidePanel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -340px;
+    top: 0;
+    width: 100%;
+    max-width: 340px;
+    height: 100%;
+    background-color: #383838;
+    transition: all .6s ease;
+    z-index: 1000;
+}
+
+.ClosePanel {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 40px;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+}
+
+.ClosePanel > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2d2d2d;
+}
+
+.LoginPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 0 70px 50px 40px;
+}
+
+.LoginPanel > h4 {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+    color: #DDD;
+    line-height: 1.5;
+}
+
+.LoginPanel > div {
+    margin-bottom: 25px;
+}
+
+.LoginPanel label {
+    color: #BBB;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.LoginPanel input {
+    margin-top: 10px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 13.3px;
+    border: 1px solid #ced4da;
+    padding: 4px 8px;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    color: #999;
+    background-color: rgba(0,0,0,0.2);
+    border-color: rgba(0,0,0,0.25);
+    height: calc(1.5em + 0.5rem + 2px);
+}
+
+.LoginSubmit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #111;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+    border-radius: 3px;
+}
+
+.LoginPanel > a {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.LoginPanel > a:hover {
+    color: white;
+}
+
+.Overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
