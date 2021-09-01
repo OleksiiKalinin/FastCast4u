@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/FastCast4u/static/css/main.462ccd56.chunk.css",
+    "main.css": "/FastCast4u/static/css/main.6d7e2e4d.chunk.css",
     "main.js": "/FastCast4u/static/js/main.a1d304b6.chunk.js",
     "main.js.map": "/FastCast4u/static/js/main.a1d304b6.chunk.js.map",
     "runtime-main.js": "/FastCast4u/static/js/runtime-main.cb331fbf.js",
@@ -8,7 +8,7 @@
     "static/js/2.25479dee.chunk.js": "/FastCast4u/static/js/2.25479dee.chunk.js",
     "static/js/2.25479dee.chunk.js.map": "/FastCast4u/static/js/2.25479dee.chunk.js.map",
     "index.html": "/FastCast4u/index.html",
-    "static/css/main.462ccd56.chunk.css.map": "/FastCast4u/static/css/main.462ccd56.chunk.css.map",
+    "static/css/main.6d7e2e4d.chunk.css.map": "/FastCast4u/static/css/main.6d7e2e4d.chunk.css.map",
     "static/js/2.25479dee.chunk.js.LICENSE.txt": "/FastCast4u/static/js/2.25479dee.chunk.js.LICENSE.txt",
     "static/media/RegistrationPanel.module.css": "/FastCast4u/static/media/bg-white.8f181c0d.png",
     "static/media/logo.c9a436ec.png": "/FastCast4u/static/media/logo.c9a436ec.png"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.cb331fbf.js",
     "static/js/2.25479dee.chunk.js",
-    "static/css/main.462ccd56.chunk.css",
+    "static/css/main.6d7e2e4d.chunk.css",
     "static/js/main.a1d304b6.chunk.js"
   ]
 }
