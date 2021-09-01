@@ -1,5 +1,5 @@
 .RegistrationPanel {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center top;
     min-height: 800px;
-    height: calc(100vh - 60px);
+    /* height: calc(100vh - 60px); */
 }
 
 .LeftSide, .RightSide {

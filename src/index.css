@@ -30,3 +30,9 @@ a {
   opacity: 1;
   transform: translate(0, -1px);
 }
+
+@media (max-width: 768px) {
+  #root {
+    padding-right: 0;
+  }
+}

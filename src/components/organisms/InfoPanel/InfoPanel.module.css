@@ -139,4 +139,8 @@
     .ActiveTopic::after {
         opacity: 0;
     }
+
+    .InfoPanelTableInfo {
+        padding-right: 0;
+    }
 }
