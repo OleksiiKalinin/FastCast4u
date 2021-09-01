@@ -12,7 +12,8 @@ const InfoPanel = () => {
 
     const scrollDown = () => {
         const block = document.querySelector(`html`);
-        block.scrollTo({top: InfoPanelRef.current.offsetTop - block.getBoundingClientRect().top - 60, behavior: 'smooth', block: 'center'});
+        console.log(InfoPanelRef.current.offsetTop);
+        block.scrollTo({top: InfoPanelRef.current.offsetTop - 60, behavior: 'smooth'});
     }
 
     return (

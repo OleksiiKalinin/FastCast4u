@@ -6,8 +6,8 @@
     background-image: url(/src/assets/images/bg-white.png);
     background-size: cover;
     background-position: center top;
-    min-height: 800px;
-    /* height: calc(100vh - 60px); */
+    /* min-height: 800px; */
+    min-height: calc(100vh - 60px);
 }
 
 .LeftSide, .RightSide {
