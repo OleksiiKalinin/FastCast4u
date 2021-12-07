@@ -11,9 +11,7 @@ const InfoPanel = () => {
     const [activeTopic, setActiveTopic] = useState(1);
 
     const scrollDown = () => {
-        const block = document.querySelector(`html`);
-        console.log(InfoPanelRef.current.offsetTop);
-        block.scrollTo({top: InfoPanelRef.current.offsetTop - 60, behavior: 'smooth'});
+        window.scrollTo({top: InfoPanelRef.current.offsetTop - 60, behavior: 'smooth'});
     }
 
     return (
