@@ -1,1 +1,2 @@
-To view: https://oleksiikalinin.github.io/FastCast4u/
+Interview task
+https://oleksiikalinin.github.io/FastCast4u/
